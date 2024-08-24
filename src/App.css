@@ -1,0 +1,32 @@
+.testimonial-bg {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.8)
+      ),
+      url('/tets1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.position-relative:hover .overlay {
+  opacity: 1;
+}
+
+.position-relative img {
+  transition: transform 0.5s ease;
+}
+
+.position-relative:hover img {
+  transform: scale(1.1);
+}
+

@@ -75,7 +75,7 @@ const Service = () => {
               >
                 <div className="service-item rounded pt-3">
                   <div className="p-4">
-                    <i className={`fa fa-3x ${service.icon} text-danger mb-4`} />
+                    <i className={`fa fa-3x ${service.icon} text-danger  mb-4`} />
                     <h5>{service.title}</h5>
                     <p>{service.description}</p>
                   </div>

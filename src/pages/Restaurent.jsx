@@ -11,20 +11,20 @@ const Restaurent = () => {
   }, [location.pathname]);
   return (
     <>
-   <Helmet>
-  <title>Menu | Tanbe Convention & Lounge</title>
+      <Helmet>
+        <title>Menu | Tanbe Convention & Lounge</title>
 
-  <meta
-    name="description"
-    content="Discover the exquisite dining and luxurious accommodation at Tanbe Convention & Lounge. Experience our top-notch service and culinary delights."
-  />
+        <meta
+          name="description"
+          content="Discover the exquisite dining and luxurious accommodation at Tanbe Convention & Lounge. Experience our top-notch service and culinary delights."
+        />
 
-  <meta
-    name="keywords"
-    content="Hotel, Restaurant, Fine Dining, Luxury Accommodation, Gourmet Cuisine"
-  />
-</Helmet>
-    
+        <meta
+          name="keywords"
+          content="Hotel, Restaurant, Fine Dining, Luxury Accommodation, Gourmet Cuisine"
+        />
+      </Helmet>
+
       {!isHomePage && (
         <div className="container-xxl py-5 bg-dark hero-header mb-5">
           <div className="container text-center my-5 pt-5 pb-4">
@@ -105,475 +105,77 @@ const Restaurent = () => {
                 </a>
               </li>
             </ul>
+
             <div className="tab-content">
               <div id="tab-1" className="tab-pane fade show p-0 active">
                 <div className="row g-4">
-                  <div className="col-lg-6">
+                  <div className="col-lg-4">
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
                         src="img/menu-1.jpg"
                         alt
-                        style={{ width: 80 }}
+                        style={{ width: 70 }}
                       />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
+                      <div className="w-100 d-flex flex-column text-start ps-2">
+                        <h6 className="d-flex justify-content-between border-bottom pb-2">
                           <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
+                          <span className="text-danger">Rs 115</span>
+                        </h6>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-3.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-4.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-5.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-6.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-7.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-8.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-2" className="tab-pane fade show p-0">
-                <div className="row g-4">
-                  <div className="col-lg-6">
+                  <div className="col-lg-4">
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
                         src="img/menu-1.jpg"
                         alt
-                        style={{ width: 80 }}
+                        style={{ width: 70 }}
                       />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
+                      <div className="w-100 d-flex flex-column text-start ps-2">
+                        <h6 className="d-flex justify-content-between border-bottom pb-2">
                           <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
+                          <span className="text-danger">Rs 115</span>
+                        </h6>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-3.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-4.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-5.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-6.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-7.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-8.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-3" className="tab-pane fade show p-0">
-                <div className="row g-4">
-                  <div className="col-lg-6">
+                  <div className="col-lg-4">
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
                         src="img/menu-1.jpg"
                         alt
-                        style={{ width: 80 }}
+                        style={{ width: 70 }}
                       />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
+                      <div className="w-100 d-flex flex-column text-start ps-2">
+                        <h6 className="d-flex justify-content-between border-bottom pb-2">
                           <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
+                          <span className="text-danger">Rs 115</span>
+                        </h6>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-4">
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
                         src="img/menu-2.jpg"
                         alt
-                        style={{ width: 80 }}
+                        style={{ width: 70 }}
                       />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
+                      <div className="w-100 d-flex flex-column text-start ps-2">
+                        <h6 className="d-flex justify-content-between border-bottom pb-2">
                           <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-3.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-4.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-5.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-6.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-7.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-8.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-danger">$115</span>
-                        </h5>
-                        <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
-                        </small>
+                          <span className="text-danger">Rs 115</span>
+                        </h6>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            
             </div>
           </div>
         </div>

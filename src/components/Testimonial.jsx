@@ -76,13 +76,17 @@ const Testimonial = () => {
   };
   return (
     <>
+
+    <div className="testimonial-bg">
+
+   
       <div className="container">
         <div className="row py-5">
           <div className="text-center">
             <h5 className="section-title ff-secondary text-center text-danger fw-normal">
               Testimonial
             </h5>
-            <h1 className="mb-5">Our Clients Say!!!</h1>
+            <h1 className="mb-5 text-white">Our Clients Say!!!</h1>
           </div>
 
 
@@ -98,8 +102,8 @@ const Testimonial = () => {
                     className="rounded-circle"
                     alt={review.name}
                     style={{
-                      width: "100px",
-                      height: "100px",
+                      width: "120px",
+                      height: "120px",
                       objectFit: "cover",
                       border: "3px solid #dc3545",
                     }}
@@ -117,6 +121,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
