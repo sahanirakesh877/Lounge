@@ -113,7 +113,7 @@ const About = () => {
                 as they help in organizing every little detail for a flawless
                 execution. This magnificent venue has a lot to offer on its
                 premises for you and your special guests on your big and
-                enormous night that your wedding is. History
+                enormous night that your wedding is. 
               </p>
               <p className="mb-2">
                 Tanbe convention and lounge Pvt Ltd offers you splendid
@@ -124,7 +124,7 @@ const About = () => {
                 receive the royal good treatment by the management and staff of
                 Tanbe. The offer you lawn and banquet space, a tremendous
                 poolside, basic lighting, proper music, etc. The power backup is
-                24*7 make it even more convenient for you. Services offered
+                24*7 make it even more convenient for you.
               </p>
 
               <div className="row g-4 mb-4">
