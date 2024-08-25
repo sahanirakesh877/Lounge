@@ -1,39 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router";
-import menudata from "../data/menuData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCoffee,
-  faEgg,
-  faBreadSlice,
-  faDrumstickBite,
-  faCarrot,
-  faBowlRice,
-  faUtensils,
-  faQuestion,
-  faGlassWater,
-} from "@fortawesome/free-solid-svg-icons";
+import menudata from "../data/menu";
 
 const Banquet = () => {
-  const iconMap = {
-    "Hot Beverages": faCoffee,
-    "Cold Beverages": faGlassWater,
-    "Breakfast": faEgg,
-    "Bara": faBreadSlice,
-    "Soup": faBowlRice,
-    "Sandwich": faUtensils,
-    "Non-Veg Snacks": faDrumstickBite,
-    "Veg Snacks": faCarrot,
-    "Fried Rice": faBowlRice,
-    "Noodles": faUtensils,
-    "Thakali Set": faBowlRice,
-    "Newari Khaja Set": faBowlRice,
-    "Thukpa": faBowlRice,
-  };
-
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const [activeCategory, setActiveCategory] = useState("Hot Beverages");
+  const menuRef = useRef()
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,11 +17,30 @@ const Banquet = () => {
     (item) => item.category === activeCategory
   );
 
+  // const formatPrice = (price) => {
+  //   if (typeof price === "object") {
+  //     return ` Rs ${price.single} / ${price.double}`;
+  //   }
+  //   return `Rs ${price}`;
+  // };
   const formatPrice = (price) => {
     if (typeof price === "object") {
-      return ` Rs ${price.single} / ${price.double}`;
+      return Object.entries(price)
+        .map(([key, value]) => `${key}: Rs ${value}`)
+        .join(" / ");
     }
     return `Rs ${price}`;
+  };
+  
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+    if (menuRef.current) {
+      const menuPosition = menuRef.current.getBoundingClientRect();
+      window.scrollTo({
+        top: menuPosition.top + window.scrollY - 50, // Adjust offset as needed
+        behavior: "smooth", // Smooth scrolling
+      });
+    }
   };
 
   return (
@@ -80,7 +72,7 @@ const Banquet = () => {
       )}
 
       {/* Menu Start */}
-      <div className="container-xxl py-5">
+      <div className="container-xxl py-5" ref={menuRef}>
         <div className="container">
           <div className="text-center wow fadeInUp pb-3" data-wow-delay="0.1s">
             <h5 className="section-title ff-secondary text-center text-danger fw-normal">
@@ -114,16 +106,14 @@ const Banquet = () => {
               {/* Categories */}
               <ul className="nav nav-pills flex-column ">
                 {categories.map((category) => (
-                  <li className="nav-item" key={category}>
+                  <li className="nav-item border" key={category}>
                     <a
-                      className={`nav-link d-flex align-items-center text-start mb-1 py-1 ${
+                      className={`nav-link d-flex align-items-center text-start  py-1 ${
                         category === activeCategory ? "active" : ""
                       }`}
-                      onClick={() => setActiveCategory(category)}
+                      onClick={() => handleCategoryClick(category)}
                       role="button"
                     >
-                      <FontAwesomeIcon icon={iconMap[category] || faQuestion} style={{ color: '#DC3545' }}  />
-
                       <div className="ps-2">
                         <h6 className="p-0 m-0 ">{category}</h6>
                       </div>

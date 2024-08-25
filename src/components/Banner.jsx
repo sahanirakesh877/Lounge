@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -8,22 +9,20 @@ const Banner = () => {
           <div className="container my-5 py-5">
             <div className="row align-items-center g-5">
               <div className="col-lg-6 text-center text-lg-start ">
-                <h1 className="display-4 text-white animated slideInLeft">
+                <h1 className="display-5 text-white animated slideInLeft">
                   Welcome to Our
                   <br />
                   Tanbe & Convention Lounge
                 </h1>
                 <p className="text-white animated slideInLeft mb-4 pb-2">
-                  Experience a blend of elegance and taste in a perfect setting. 
-                  Whether you're celebrating a special occasion or enjoying a casual meal, 
-                  our offerings are designed to delight your senses.
+                Welcome to Tanbe convention , Madhyapur timi’s premier Party Centre. We offer a full service experience, for all of your banquet needs, your weddings, birthdays, corporate retreats and/or private events. Choose from our extensive menu, or request a specialized meal prepared. Exclusively for your event
                 </p>
-                <a
-                  href
+                <Link
+                  to='/book'
                   className="btn btn-danger py-sm-3 px-sm-5 me-3 animated slideInLeft"
                 >
                   Reserve Your Spot
-                </a>
+                </Link>
               </div>
               <div className="col-lg-6 text-center text-lg-end overflow-hidden">
                 <img className="img-fluid" src="img/hero.png" alt="Banquet and Restaurant" />

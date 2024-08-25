@@ -4,53 +4,56 @@ import Slider from "react-slick";
 const reviews = [
   {
     id: 1,
-    text: "I recently purchased a SurgiCare electric toothbrush and I'm very impressed with its performance. My teeth feel cleaner and healthier since I started using it.",
-    name: "Sarah Thompson",
-    profession: "Dental Hygienist",
+    text: "Our stay at Tanbe was exceptional. The service was top-notch, and the food was simply divine. We will definitely be back!",
+    name: "Jessica Taylor",
+    profession: "Travel Blogger",
     image:
-      "https://img.freepik.com/premium-photo/brunette-girl-with-glasses_58409-14928.jpg?w=1380",
+      "https://img.freepik.com/premium-photo/young-woman-posing-sunny-day-casual-wear_58409-14928.jpg?w=1380",
   },
   {
     id: 2,
-    text: "As a surgeon, I rely on SurgiCare surgical masks for their high quality and reliability. They provide excellent protection for me and my patients.",
-    name: "Dr. Michael Chen",
-    profession: "Surgeon",
+    text: "Tanbe's event coordination was flawless. Our wedding went off without a hitch, and the venue was beautifully decorated.",
+    name: "William Harris",
+    profession: "Event Planner",
     image:
-      "https://img.freepik.com/free-photo/man-plaid-shirt-bow-tie-studio_158595-491.jpg?w=1380",
+      "https://img.freepik.com/free-photo/handsome-man-glasses-standing-outside-city_23-2148806764.jpg?w=1380",
   },
   {
     id: 3,
-    text: "I've been using SurgiCare wound dressings for my patients for years. They are easy to apply and provide excellent healing properties.",
-    name: "Nurse Emily Johnson",
-    profession: "Wound Care Specialist",
+    text: "The ambiance at Tanbe is perfect for a romantic dinner. We loved the extensive wine selection and the cozy atmosphere.",
+    name: "Emily Clark",
+    profession: "Food Critic",
     image:
-      "https://img.freepik.com/premium-psd/indian-man-hold-voucher-card-store_76964-39060.jpg?w=826",
+      "https://img.freepik.com/free-photo/portrait-happy-young-woman-standing_171337-21937.jpg?w=1380",
   },
   {
     id: 4,
-    text: "The SurgiCare blood pressure monitor is easy to use and provides accurate readings. It helps me keep track of my health at home.",
-    name: "John Smith",
-    profession: "Health Enthusiast",
+    text: "As a business traveler, I appreciated the fast Wi-Fi and 24/7 power backup. Tanbe ensured my stay was productive and comfortable.",
+    name: "James Anderson",
+    profession: "Business Executive",
     image:
-      "https://img.freepik.com/free-photo/portrait-young-man-isolated-white-wall_155003-19370.jpg?w=1380",
+      "https://img.freepik.com/free-photo/smiling-young-man-blue-shirt_176474-20912.jpg?w=1380",
   },
   {
     id: 5,
-    text: "I purchased SurgiCare bandages for my first aid kit and they have come in handy several times. They stick well and are very durable.",
-    name: "Alice Brown",
-    profession: "First Aid Trainer",
+    text: "Tanbe's banquet halls are perfect for large events. We hosted our company’s annual conference here, and everything was seamless.",
+    name: "Sophia Martinez",
+    profession: "Corporate Manager",
     image:
-      "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?w=1380",
+      "https://img.freepik.com/free-photo/portrait-cheerful-young-woman-white-sweater_171337-16952.jpg?w=1380",
   },
   {
     id: 6,
-    text: "I'm impressed with the quality of SurgiCare disposable gloves. They are comfortable to wear and provide excellent protection for my hands.",
-    name: "Mark Wilson",
-    profession: "Laboratory Technician",
+    text: "The customizable decor options at Tanbe allowed us to create the perfect theme for our event. The attention to detail was amazing.",
+    name: "Michael Brown",
+    profession: "Interior Designer",
     image:
-      "https://img.freepik.com/free-photo/young-man-showing-large-size-sign-shirt-jacket-looking-confident-front-view_176474-88927.jpg?w=1380",
+      "https://img.freepik.com/free-photo/young-man-wearing-checkered-shirt-showing-thumbs-up-smiling_176474-88927.jpg?w=1380",
   },
 ];
+
+
+
 
 const Testimonial = () => {
   var settings = {

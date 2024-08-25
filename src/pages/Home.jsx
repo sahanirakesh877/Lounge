@@ -3,11 +3,12 @@ import Banner from "../components/Banner";
 import About from "../pages/About";
 import BookRes from "./BookRes";
 import Service from "../components/Service";
-import Restaurent from "./Restaurent";
+// import Restaurent from "./Restaurent";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
 import Testimonial from "./../components/Testimonial";
 import { Helmet } from "react-helmet";
+import Banquet from "./Banquet";
 
 const Home = () => {
   return (
@@ -16,8 +17,7 @@ const Home = () => {
       <Banner />
       <About />
       <Service />
-
-      <Restaurent />
+      <Banquet />
       <BookRes />
       <Gallery />
       <Contact />

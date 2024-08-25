@@ -45,21 +45,19 @@ const Header = () => {
                 About
               </Link>
               <Link to="/service" className="nav-item nav-link" onClick={closeNavbar}>
-                Service
+                Our Banquet
               </Link>
-              <Link to="/menu" className="nav-item nav-link" onClick={closeNavbar}>
-                Menu
+              <Link to="/benquet" className="nav-item nav-link" onClick={closeNavbar}>
+                Our Restaurent
               </Link>
-              <Link to="/book" className="nav-item nav-link" onClick={closeNavbar}>
-                Book
-              </Link>
+             
               <Link to="/contact" className="nav-item nav-link" onClick={closeNavbar}>
                 Contact
               </Link>
             </div>
-            <a href="#" className="btn btn-danger py-2 px-4">
-              Book A Table
-            </a>
+            <Link to="/book" className="btn btn-danger py-2 px-4">
+              Book 
+            </Link>
           </div>
         </nav>
       </div>
