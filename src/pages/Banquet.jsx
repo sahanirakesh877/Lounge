@@ -102,7 +102,7 @@ const Banquet = () => {
           </ul>
 
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 mb-3">
               {/* Categories */}
               <ul className="nav nav-pills flex-column ">
                 {categories.map((category) => (

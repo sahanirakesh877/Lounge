@@ -109,7 +109,7 @@ const BookRes = () => {
                 type="button"
                 className="btn-play"
                 data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                data-src="https://www.youtube.com/embed/jZyAB2KFDls?si=cAxZvfSx1wuRzh70"
                 data-bs-target="#videoModal"
               >
                 <span />
