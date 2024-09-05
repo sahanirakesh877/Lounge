@@ -134,7 +134,7 @@ const Banquet = () => {
                             className="flex-shrink-0 img-fluid rounded"
                             src={item.image}
                             alt={item.title}
-                            style={{ width: 80 }}
+                            style={{ width: 90,height: 80,objectFit:"cover"}}
                           />
                           <div className="w-100 d-flex flex-column text-start ps-3">
                             <h6 className="d-flex justify-content-between border-bottom pb-2">

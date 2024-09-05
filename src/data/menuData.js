@@ -1,3 +1,6 @@
+import milktea from '../../public/img/Hot Bevarage/MilkTea.jpeg'
+
+
 const menudata = [
   // hot Bevarage start
   {
@@ -5,7 +8,7 @@ const menudata = [
     title: "Milk Tea",
     category: "Hot Beverages",
     price: 50,
-    image: "/img/menu-1.jpg",
+    image: '/img/HotBevarage/MilkTea.jpeg',
   },
   {
     id: 2,

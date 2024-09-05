@@ -207,7 +207,7 @@ const menudata = [
     title: "American Breakfast (sausage, omlet,bread,hot drink)",
     category: "Breakfast",
     price: 500,
-    image: "/img/menu-2.jpg",
+    image: "/breakfast/american breakfast.jpg",
   },
   {
     id: 30,
@@ -221,7 +221,7 @@ const menudata = [
     title: "aloo paratha with curd and mixed pickle",
     category: "Breakfast",
     price: 165,
-    image: "/img/menu-3.jpg",
+    image: "/breakfast/aloo paratha.jpg",
   },
   {
     id: 32,
@@ -242,7 +242,7 @@ const menudata = [
     title: "masla omelet ",
     category: "Breakfast",
     price: 200,
-    image: "/img/menu-3.jpg",
+    image: "/breakfast/masal omelet.jpg",
   },
   // Breakfast  Bevarage end
 
