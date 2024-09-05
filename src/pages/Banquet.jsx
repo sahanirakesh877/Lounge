@@ -17,12 +17,7 @@ const Banquet = () => {
     (item) => item.category === activeCategory
   );
 
-  // const formatPrice = (price) => {
-  //   if (typeof price === "object") {
-  //     return ` Rs ${price.single} / ${price.double}`;
-  //   }
-  //   return `Rs ${price}`;
-  // };
+
   const formatPrice = (price) => {
     if (typeof price === "object") {
       return Object.entries(price)
@@ -37,8 +32,8 @@ const Banquet = () => {
     if (menuRef.current) {
       const menuPosition = menuRef.current.getBoundingClientRect();
       window.scrollTo({
-        top: menuPosition.top + window.scrollY - 50, // Adjust offset as needed
-        behavior: "smooth", // Smooth scrolling
+        top: menuPosition.top + window.scrollY - 50, 
+        behavior: "smooth",
       });
     }
   };

@@ -13,22 +13,24 @@ const Gallery = () => {
             </h5>
             <h1 className="mb-5">Some Specially dishes</h1>
           </div>
-        <div className="row">
-          {galleryItems.map((item) => (
-            <div className="col-lg-2 col-md-6 mb-4" key={item.id}>
-              <div className="position-relative overflow-hidden">
-                <img
-                  src={item.image}
-                  className="img-fluid rounded"
-                  alt={item.title}
-                />
-                <div className="overlay text-center position-absolute w-100 h-100 top-0 start-0 d-flex align-items-center justify-content-center">
-                  <h4 className="text-white fw-bold">{item.title}</h4>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="row">
+  {galleryItems.map((item) => (
+    <div className="col-lg-2 col-md-6 mb-4" key={item.id}>
+      <div className="position-relative overflow-hidden" style={{ height: '130px', width: '100%' }}>
+        <img
+          src={item.image}
+          className="img-fluid rounded"
+          alt={item.title}
+          style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+        />
+        <div className="overlay text-center position-absolute w-100 h-100 top-0 start-0 d-flex align-items-center justify-content-center">
+          <h4 className="text-white fw-bold">{item.title}</h4>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
       {/* /Gallery Section */}
     </>
