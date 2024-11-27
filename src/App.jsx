@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
 import About from "./pages/About";
-import Restaurent from "./pages/Restaurent";
 import Gallery from "./pages/Gallery";
 import Banquet from "./pages/Banquet";
 import BookRes from "./pages/BookRes";
@@ -20,7 +19,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/menu" element={<Restaurent />} /> */}
           <Route path="/benquet" element={<Banquet />} />
           <Route path="/book" element={<BookRes />} />
           <Route path="/contact" element={<Contact />} />

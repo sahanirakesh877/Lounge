@@ -110,7 +110,7 @@ const Contact = () => {
                   </h5>
                   <p>
                     <i className="fa fa-envelope-open text-danger me-2" />
-                    book@example.com
+                    info@tanbeconvention.com
                   </p>
                 </div>
                 <div className="col-md-4">
@@ -119,7 +119,7 @@ const Contact = () => {
                   </h5>
                   <p>
                     <i className="fa fa-envelope-open text-danger me-2" />
-                    info@example.com
+                    acct@tanbeconvention.com
                   </p>
                 </div>
                 <div className="col-md-4">
@@ -128,7 +128,7 @@ const Contact = () => {
                   </h5>
                   <p>
                     <i className="fa fa-envelope-open text-danger me-2" />
-                    tech@example.com
+                    purchase@tanbeconvention.com
                   </p>
                 </div>
               </div>

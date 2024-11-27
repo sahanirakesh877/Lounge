@@ -125,16 +125,16 @@ import noodles4 from "/img/Noodles/mix chowmin.jpg";
 import noodles5 from "/img/Noodles/Veg-Chowmein-1014x1536.jpg";
 // noodles  end
 
-import pasta1 from "../../public/img/pasta/pasta1.jpg";
-import pasta2 from "../../public/img/pasta/pasta2.jpg";
-import pasta3 from "../../public/img/pasta/pasta3.jpg/";
+import pasta1 from "/img/pasta/pasta1.jpg";
+import pasta2 from "/img/pasta/pasta2.jpg";
+import pasta3 from "/img/pasta/pasta3.jpg/";
 // pasta   end
 
-import salad1 from "../../public/img/salad/chefsalad.jpg";
-import salad2 from "../../public/img/salad/fruitsalad.jpg";
-import salad3 from "../../public/img/salad/greensalad.jpg";
-import salad4 from "../../public/img/salad/greensaladnepalistyle.jpg";
-import salad5 from "../../public/img/salad/russiansalad.jpg";
+import salad1 from "/img/salad/chefsalad.jpg";
+import salad2 from "/img/salad/fruitsalad.jpg";
+import salad3 from "/img/salad/greensalad.jpg";
+import salad4 from "/img/salad/greensaladnepalistyle.jpg";
+import salad5 from "/img/salad/russiansalad.jpg";
 // salad  end
 
 import sandwitch1 from "/img/sandwich/cheese-sandwich.jpg";

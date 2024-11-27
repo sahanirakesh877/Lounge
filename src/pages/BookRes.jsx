@@ -11,7 +11,7 @@ const BookRes = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    datetime: null, // Date is now handled as a Date object
+    datetime: null, 
     phone: "",
     people: "",
     message: "",
@@ -167,7 +167,8 @@ const BookRes = () => {
                       />
                       <label
                         htmlFor="datetime"
-                        className={formData.datetime ? "floating  " : ""}
+                        // className={formData.datetime ? "floating  " : ""}
+                        className="form-label"
                       >
                         Date &amp; Time
                       </label>
