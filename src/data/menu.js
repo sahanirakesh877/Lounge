@@ -127,7 +127,7 @@ import noodles5 from "/img/Noodles/Veg-Chowmein-1014x1536.jpg";
 
 import pasta1 from "/img/pasta/pasta1.jpg";
 import pasta2 from "/img/pasta/pasta2.jpg";
-import pasta3 from "/img/pasta/pasta3.jpg/";
+import pasta3 from "/img/pasta/pasta3.jpg";
 // pasta   end
 
 import salad1 from "/img/salad/chefsalad.jpg";

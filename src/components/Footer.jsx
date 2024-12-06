@@ -20,6 +20,7 @@ const Footer = () => {
         <h4 className="section-title ff-secondary text-start text-danger fw-normal mb-4">Contact</h4>
         <p className="mb-2"><i className="fa fa-map-marker-alt me-3" />Chardobato, Bhaktapur</p>
         <p className="mb-2"><i className="fa fa-phone-alt me-3" />+977 9860199733</p>
+        <p className="mb-2"><i className="fa fa-phone-alt me-3" />+015902252</p>
         <p className="mb-2"><i className="fa fa-envelope me-3" />info@tanbeconvention.com</p>
         <div className="d-flex pt-2">
           <a className="btn btn-outline-light btn-social" href><i className="fab fa-twitter" /></a>

@@ -4,6 +4,7 @@ import { useLocation } from "react-router";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import BookBanquet from "../components/BookBanquet";
 
 const BookRes = () => {
   const location = useLocation();
@@ -11,7 +12,7 @@ const BookRes = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    datetime: null, 
+    datetime: null,
     phone: "",
     people: "",
     message: "",
@@ -35,7 +36,7 @@ const BookRes = () => {
     console.log("Form Data:", formData);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/book",
+        `${import.meta.env.VITE_SERVER}/api/book`,
         formData
       );
 
@@ -99,7 +100,7 @@ const BookRes = () => {
 
       {/* Reservation Start */}
       <div
-        className="container-xxl py-5 px-0 wow fadeInUp"
+        className="container-xxl py-2 px-0 wow fadeInUp"
         data-wow-delay="0.1s"
       >
         <div className="row g-0">
@@ -116,12 +117,13 @@ const BookRes = () => {
               </button>
             </div>
           </div>
+
           <div className="col-md-6 bg-dark d-flex align-items-center">
             <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
               <h5 className="section-title ff-secondary text-start text-danger fw-normal">
-                Reservation
+                Reservation Restaurent
               </h5>
-              <h1 className="text-white mb-4">Book A Table Online</h1>
+              <h1 className="text-white mb-4">Book A Restaurent Online</h1>
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
@@ -163,7 +165,6 @@ const BookRes = () => {
                         dateFormat="Pp"
                         className="form-control  "
                         id="datetime"
-                        
                       />
                       <label
                         htmlFor="datetime"
@@ -236,7 +237,6 @@ const BookRes = () => {
           </div>
         </div>
       </div>
-
       <div
         className="modal fade"
         id="videoModal"
@@ -274,6 +274,10 @@ const BookRes = () => {
         </div>
       </div>
       {/* Reservation End */}
+
+      {/* Banquet Start */}
+      <BookBanquet />
+      {/* Banquet End */}
     </>
   );
 };
